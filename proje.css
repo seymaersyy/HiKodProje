@@ -1,0 +1,97 @@
+/* Slider'ı tam ekran yapmak için */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ekranı tamamen kaplasın */
+    overflow: hidden;
+  }
+  
+  .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Görsel aktif olduğunda görünür olsun */
+  .slider img.active {
+    opacity: 1;
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Hafif büyütme efekti */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+  }
+  
+
+
+
+
+
+  /* Navbar genel stil */
+.navbar {
+  
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(219, 39, 39, 0.1);
+}
+
+/* Navbar linkleri stil */
+.nav-link {
+  font-size: 20px; /* Yazı boyutunu büyüttük */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover efekti */
+.nav-link:hover {
+  background-color: #cfcba9be;
+  color: #fff;
+}
+
+/* Aktif link stil */
+.nav-link.active {
+  background-color: #cfcba9be;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Dropdown menü stil */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown item hover efekti */
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+
+/* İhlal Bildir butonu stili */
+.ihlal-bildir-btn {
+  font-size: 18px;           /* Yazı boyutu artırıldı */
+  padding: 10px 20px;        /* İç boşluk artırıldı */
+  border-radius: 8px;        /* Kenarlar daha yuvarlak yapıldı */
+  font-weight: bold;         /* Yazı kalınlaştırıldı */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover efekti */
+.ihlal-bildir-btn:hover {
+  background-color: #830808;
+  transform: scale(1.05);    /* Üzerine gelindiğinde hafif büyüme efekti */
+}
