@@ -144,3 +144,81 @@ color: #343a40;  /* Metin rengini koyuluğu */
   background-color: #830808;
   transform: scale(1.05);    /* Üzerine gelindiğinde hafif büyüme efekti */
 }
+
+/* Footer genel stil */
+footer {
+  background-color: #cfcba9be;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto; /* Üstte içerik, altta telif hakkı */
+  grid-template-columns: 1fr 1fr auto; /* Sol, orta, sağ sütun */
+  align-items: center;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+form input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+form input[type="email"] {
+  flex: 1;
+}
+form input[type="submit"] {
+  flex: 0;
+  padding: 10px 20px;
+  background-color: #830808;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer div.icons {
+  grid-column: 1 / 4; /* Sol sütun */
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+footer div.icons a{
+  color: black;
+  font-size: 20px;
+  transition: color 0.3s;
+  padding: 5px;
+}
+
+footer div.icons i {
+  color: black;
+  font-size: 20px;
+  transition: color 0.3s;
+  
+}
+
+footer div.icons i:hover {
+  color: #830808; /* Hover efekti */
+}
+
+footer .footer_text {
+  grid-column: 1 / 4; /* Üç sütunu kapla */
+  text-align: center;
+  font-size: 0.8rem;
+  color: black;
+}
+
+footer .contact-info {
+  grid-column: 1 / 2; /* Üç sütunu kapla */
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
