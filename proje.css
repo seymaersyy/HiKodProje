@@ -15,7 +15,7 @@ body, html {
 
  /*insan hakları nedir kartı ile slider görselleri arasındaki boşluk*/
  .slider {
-  margin-bottom: 50px; /* Slider altına boşluk ekledik */
+  margin-bottom: 30px; /* Slider altına boşluk ekledik */
 }
 
 .container.d-flex {
@@ -46,6 +46,36 @@ color: #343a40;  /* Metin rengini koyuluğu */
   .slider img.active {
     opacity: 1;
   }
+
+  /* Yeni açıklama kartları slider'ı */
+.description-slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 10px;
+}
+
+.description-slide {
+  display: none;
+  text-align: center;
+}
+
+.description-slide.active {
+  display: block;
+}
+
+.description-slide h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description-slide p {
+  font-size: 18px;
+  color: #555;
+}
 
   .card:hover {
     transform: scale(1.05); /* Hafif büyütme efekti */

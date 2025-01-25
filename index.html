@@ -46,6 +46,47 @@
       <img src="/img/2..jpg" alt="Fotoğraf 2">
     </div>
 
+    <!-- Yeni Slider (Açıklama Kartları) -->
+  <div class="description-slider">
+    <div class="description-slide active">
+      <h2>Mustafa Kemal Atatürk</h2>
+      <p>“İnsan hakları uygar yaşamın temelidir, çağımızın değeridir, güvencesi demokrasidir.”</p>
+    </div>
+    <div class="description-slide">
+      <h2>Cynthia McKinney</h2>
+      <p>“Birbirimize karşı değil, birbirimize doğru döndüğümüzde, çeşitliliğimizin değerini anladığımızda daha güçlü oluruz… ve birlikte adaletsizliğin kalın duvarlarını yıkabiliriz.”</p>
+    </div>
+    <div class="description-slide">
+      <h2>Irene Khan</h2>
+      <p>“Adalet ve insan haklarına saygı olmadan barış olmaz.”</p>
+    </div>
+    <div class="description-slide">
+      <h2>Nelson Mandela</h2>
+      <p>“İnsan haklarını inkar etmek, insanlığa meydan okumaktır.”</p>
+    </div>
+    <div class="description-slide">
+      <h2>Eleanor Roosevelt</h2>
+      <p>"İnsan hakları, sokaklarda ve evlerde başlar, dünyayı değiştiren küçük eylemlerle büyür."</p>
+    </div>
+    <div class="description-slide">
+      <h2>Mahatma Gandhi</h2>
+      <p>“Dünyada görmek istediğin değişimin kendisi ol!”</p>
+    </div>
+    <div class="description-slide">
+      <h2> Martin Luther King</h2>
+      <p>“Bir yerdeki adaletsizlik, her yerdeki adalete tehdittir.”</p>
+    </div>
+    <div class="description-slide">
+      <h2>Dalay Lama</h2>
+      <p>“Barış ancak insan haklarına saygı gösterildiği, insanların doyduğu ve kişiler ile ulusların özgür olduğu yerlerde devamlı olabilir.”</p>
+    </div>
+    <div class="description-slide">
+      <h2>Arundhati Roy</h2>
+      <p>“Merkezinde, üzerinde, temelinde ve içinde kadınların olmadığı bir siyasi mücadele, mücadele değildir.”</p>
+    </div>
+
+  </div>
+</div>
 
 
     <!--insan hakları bilgi kartı-->
@@ -197,6 +238,43 @@
 
   // Sayfa yüklendiğinde rastgele bir bilgi göster
   document.addEventListener("DOMContentLoaded", showRandomFact);
+</script>
+
+<!-- İnsan Haklarıile ilgili özlü sözler slider JavaScript kodu -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".slider img");
+  const descriptionSlides = document.querySelectorAll(".description-slide");
+
+  let currentIndex = 0;
+
+  // Açıklama indeksini takip etmek için bir değişken
+  let descriptionIndex = 0;
+
+  // Görsel ve açıklamaları değiştiren fonksiyon
+  function changeSlide() {
+    // Görsel değişimi
+    images[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % images.length;  // Görseller arasında döngü
+    images[currentIndex].classList.add("active");
+
+    // Açıklama değişimi
+    descriptionSlides.forEach(slide => slide.classList.remove("active"));
+    descriptionSlides[descriptionIndex].classList.add("active");
+
+    // Açıklama indeksini bir artır, 9'dan sonra başa dön
+    descriptionIndex = (descriptionIndex + 1) % descriptionSlides.length;
+  }
+
+  // İlk görsel ve açıklama aktif hale getirilir
+  images[currentIndex].classList.add("active");
+  descriptionSlides[descriptionIndex].classList.add("active");
+
+  // Her 7 saniyede bir görsel ve açıklama değişir
+  setInterval(changeSlide, 7000);
+});
+
+
 </script>
 
 
