@@ -46,6 +46,39 @@
       <img src="/img/2..jpg" alt="Fotoğraf 2">
     </div>
 
+
+
+    <!--insan hakları bilgi kartı-->
+
+    <div class="container d-flex justify-content-center">
+      <div class="row row-cols-1 row-cols-md-2 g-4 " style="max-width: 800px;">
+        <div class="col">
+          <div class="card" style="background-color:rgb(61, 15, 36) ;">
+            <div class="card-body">
+              <h5 class="card-title text-white">İnsan Hakları Nelerdir</h5>
+              <p class="card-text text-white">İnsan hakları, geçmişimiz, yaşadığımız yer, görünüşümüz, düşüncemiz veya inancımız ne olursa olsun her insanın içsel değerini kabul eder.</p>
+              <a href="#" class="btn btn-primary">Daha Fazla Bilgi Edinin</a>
+            </div>
+          </div>
+        </div>
+
+        <!--kısa bilgi kartı-->
+        <div class="col">
+          <div class="card custom-card">
+            <!-- Kart içeriği -->
+            <div class="card-body">
+              <h5 class="card-title text-primary">Kısa Bilgi</h5>
+              <p class="card-text" id="random-fact">Kısa bilgiler yükleniyor...</p>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+
+
     <!--Card-->
       <!-- Card'lar için grid yapısı -->
     <div class="container col-8 py-5">
@@ -119,28 +152,7 @@
     <!-- Card bitti -->
 
 
-    <div class="container d-flex justify-content-center">
-      <div class="row row-cols-1 row-cols-md-2 g-4 " style="max-width: 800px;">
-        <div class="col">
-          <div class="card" style="background-color:rgb(61, 15, 36) ;">
-            <div class="card-body">
-              <h5 class="card-title text-white">İnsan Hakları Nelerdir</h5>
-              <p class="card-text text-white">İnsan hakları, geçmişimiz, yaşadığımız yer, görünüşümüz, düşüncemiz veya inancımız ne olursa olsun her insanın içsel değerini kabul eder.</p>
-              <a href="#" class="btn btn-primary">Daha Fazla Bilgi Edinin</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  
     
 
     <script>
@@ -154,5 +166,40 @@
       }, 7000); // 7 saniyede bir değişim
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    
+    <!-- kısa bilgi JavaScript kodu -->
+ <script>
+  // Kısa bilgiler listesi
+  const facts = [
+    "İnsan hakları, doğuştan gelir ve herkes için eşittir; dil,din,ırk ya da cinsiyet ayrımı gözetmez.",
+    "Yaşam hakkı, tüm diğer hakların temeli olarak kabul edilmektedir.",
+    "Birleşmiş Milletler İnsan Hakları Evrensel Beyannamesi 1948 yılında kabul edilmiştir.",
+    "İnsan hakları evrensel, bölünemez ve devredilemezdir.",
+    "Türkiye, 1934 yılında kadınlara seçme ve seçilme hakkı tanıyarak bu alanda öncü ülkelerden biri olmuştur.",
+    "Çocuk hakları 1989 yılında Çocuk Haklarına Dair Sözleşme ile tanımlanmıştır.",
+    "İfade özgürlüğü, temel insan haklarından biridir.",
+    "Kadın hakları, toplumsal cinsiyet eşitliği için vazgeçilmezdir.",
+    "Hiç kimse kölelik veya zorla çalıştırılmaya maruz bırakılamaz.",
+    "Kölelik, 1948 tarihli İnsan Hakları Evrensel Bildirgesi ile tüm dünyada yasaklanmıştır.",
+    "Her birey eğitim alma hakkına sahiptir.",
+    "Din ve inanç özgürlüğü, her bireyin istediği dine inanma veya inanmama hakkını içerir.",
+    "İnsan Hakları Evrensel Bildirgesi, 500'den fazla dile çevrilerek dünyada en çok çevrilen belge olmuştur."
+    
+  ];
+
+  // Rastgele bilgi gösterme fonksiyonu
+  function showRandomFact() {
+    const randomFact = facts[Math.floor(Math.random() * facts.length)];
+    document.getElementById("random-fact").textContent = randomFact;
+  }
+
+  // Sayfa yüklendiğinde rastgele bir bilgi göster
+  document.addEventListener("DOMContentLoaded", showRandomFact);
+</script>
+
+
+
   </body>
 </html>

@@ -11,6 +11,25 @@ body, html {
     height: 100vh; /* Ekranı tamamen kaplasın */
     overflow: hidden;
   }
+
+
+ /*insan hakları nedir kartı ile slider görselleri arasındaki boşluk*/
+ .slider {
+  margin-bottom: 50px; /* Slider altına boşluk ekledik */
+}
+
+.container.d-flex {
+  margin-top: 50px; /* Kartların slider'dan uzaklaşması için boşluk */
+}
+
+/* Bilgi kartın içeriği (card-body) arka planını değiştirme */
+.custom-card .card-body {
+background-color: #9dc6f0;  /* Daha açık gri bir arka plan */
+padding: 20px;  
+color: #343a40;  /* Metin rengini koyuluğu */
+}
+
+
   
   .slider img {
     position: absolute;
