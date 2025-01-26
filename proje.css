@@ -13,6 +13,7 @@ body, html {
   }
 
 
+
  /*insan hakları nedir kartı ile slider görselleri arasındaki boşluk*/
  .slider {
   margin-bottom: 30px; /* Slider altına boşluk ekledik */
@@ -24,30 +25,31 @@ body, html {
 
 /* Bilgi kartın içeriği (card-body) arka planını değiştirme */
 .custom-card .card-body {
-background-color: #9dc6f0;  /* Daha açık gri bir arka plan */
+background-color:#cfcba9be;  /* Daha açık gri bir arka plan */
 padding: 20px;  
 color: #343a40;  /* Metin rengini koyuluğu */
 }
 
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-  
-  .slider img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
+
+
   
   /* Görsel aktif olduğunda görünür olsun */
   .slider img.active {
     opacity: 1;
   }
 
-  /* Yeni açıklama kartları slider'ı */
+  /* Özlü sözler slider'ı */
 .description-slider {
   position: relative;
   width: 100%;
