@@ -83,7 +83,7 @@ html {
 /* Navbar genel stil */
 .navbar {
   padding: 15px 20px;
-  box-shadow: 0 2px 10px rgba(219, 39, 39, 0.1);
+  box-shadow: 0 2px 10px rgba(219, 39, 39, 0.2);
 }
 
 /* Navbar linkleri stil */
@@ -109,17 +109,90 @@ html {
   border-radius: 5px;
 }
 
-/* Dropdown menü stil */
+/* Dropdown menü başlangıç */
 .dropdown-menu {
+  display: none;
+  opacity: 0;
   border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: opacity 2s ease-in-out; /* Geçiş süresi ve efekti */
+  background-color: rgba(207, 203, 169, 0.3);
 }
 
-/* Dropdown item hover efekti */
-.dropdown-item:hover {
-  background-color: #007bff;
-  color: #fff;
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
 }
+
+/* Dropdown öğesinin genel stili */
+.dropdown-item {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px; /* İç boşluk */
+  transition: color 0.3s; /* Geçiş animasyonu */
+}
+
+/* Fare üzerine gelindiğinde */
+.dropdown-item:hover {
+  background-color: #cfcba9be;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* İkon ve yazı hizalama */
+.dropdown-item i {
+  margin-right: 25px; /* İkon ile yazı arasındaki boşluk */
+  font-size: 16px; /* İkon boyutu */
+  background: linear-gradient(45deg, #830808, #f6816c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Kurumsal başlangıç */
+.title {
+  color: #333;
+}
+
+h4.title {
+  color: #b4adad;
+}
+
+.section-container {
+  padding: 20px;
+}
+.section-content {
+  background-color: #fff;
+  padding: 20px;
+  text-align: justify;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.section-content h2 {
+  text-align: center;
+}
+
+.image-container {
+  margin-right: 30px;
+}
+.image-container img {
+  border-radius: 8px;
+  width: 100%; /* Yeni genişlik */
+  height: auto;
+}
+
+.custom-link {
+  color: #c70c0c;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: #007bff;
+}
+
+/*dropdown menü bitişi*/
 
 /* İhlal Bildir butonu stili */
 .ihlal-bildir-btn {
