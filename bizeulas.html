@@ -27,6 +27,7 @@
     />
     <link rel="stylesheet" href="proje.css" />
     <title>Document</title>
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -49,17 +50,11 @@
               <a class="nav-link ms-3" href="bizkimiz.html">Biz Kimiz</a>
               <a class="nav-link ms-3" href="etkinlikler.html">Etkinlikler</a>
               <a class="nav-link ms-3" href="bizeulas.html">Bize Ulaş</a>
-  
               <!--Dropdown Menü-->
               <div class="nav-item dropdown ms-3">
                  <a href="#"  class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Destek Olun
+                aria-expanded="false">Destek Olun</i>
                 </a>
-                
-  
-               
-                
-   
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a href="bagis.html" class="dropdown-item">
                     <i class="bi bi-currency-exchange"></i>
@@ -76,11 +71,9 @@
                     Kurumsal İş Birliği</a>
                 </div>
               </div>
+
+              
             </div>
-  
-  
-  
-  
             <!-- Sağ tarafa hizalanan İhlal Bildir butonu -->
             <div class="navbar-nav ms-auto me-5">
               <a
@@ -92,42 +85,36 @@
           </div>
         </div>
     </nav>
+      
 
-
-
-    <section class="section-container mt-5 ">
-      <div class="container">
-        <h1 class="title text-center">DESTEĞİNİZ ÇOK ÖNEMLİ!</h1>
-        <h4 class="title text-center">Sosyal Sorumluluk Projesi Yapın</h4>
-        <div class="row mt-5 mb-5">
-            <div class="col-12 col-md-6 mb-3 d-flex align-items-center justify-content-center">
-                <div class="image-container">
-                    <img src="./img/kurumsal.jpg" alt="Puzzle" class="img-fluid">
+      <div class="contact-container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="contact-form">
+              <h2 class="form-title">İletişim</h2>
+              <p class="form-subtitle">Bize Mesaj Gönder!</p>
+              <form>
+                <div>
+                  <label for="name" class="form-label"></label>
+                  <input type="text" class="form-control w-100" id="name" placeholder="Ad Soyad Giriniz" required>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                <div class="section-content">
-                    <h3 class=" title text-center">KURUMSAL PARTNERİMİZ OLUN</h3>
-                    <p>
-                        Birlikte geliştirebileceğimiz ve yürüteceğimiz projeler sayesinde
-                        yardıma ihtiyacı olan kişilerin hayatında kuruluş olarak fark
-                        yaratabilirsiniz. Bir yandan kuruluşunuzu çalışan motivasyonu ve
-                        işveren markalaşması alanlarında desteklerken diğer yandan
-                        insanların iyi olma hallerine katkı sağlayabilirsiniz. Potansiyel
-                        işbirliği alanlarımızı görüşmek için bizimle
-                        <a href="bizeulas.html" class="custom-link">bağlantıya geçin.</a>
-                    </p>
+                <div>
+                  <label for="email" class="form-label"></label>
+                  <input type="email" class="form-control  w-100" id="email" placeholder="E-mail Adresinizi Giriniz" required>
                 </div>
+                <div>
+                  <label for="message" class="form-label"></label>
+                  <textarea class="form-control  w-100" id="message" rows="5" placeholder="Mesajınız" required></textarea>
+                </div>
+                <div class="d-grid mt-3">
+                  <button type="submit" class="btn btn-submit bg-gradient">Formu Gönder</button>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
-    </div>
-         
-        
-      </section>
-
-
-
-
+      </div>
+    
       <footer class="text-center py-3">
         <div class="footer-content">
           <div>
