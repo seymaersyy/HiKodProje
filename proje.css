@@ -239,3 +239,74 @@ form input[type="email"] {
   }
 }
 /*Abone ol kısmı bitiş*/
+
+
+/* ihlal bildir kart   */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Kartların taşmasını önler, sığmazsa alt satıra geçer */
+  justify-content: center; /* Kartları ortalar */
+  gap: 20px; /* Kartlar arası boşluk */
+  margin-bottom: 40px; /* Footer ile boşluk bırak */
+  margin-top: 30px;
+}
+
+/* Kart tasarımı */
+.card2 {
+  display: flex;
+  flex-direction: column; /* İçeriği dikey hizala */
+  align-items: center; /* Ortala */
+  justify-content: center; /* Dikey hizalama */
+  width: 300px; /* Kart genişliği */
+  min-height: 150px; /* Minimum yükseklik */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Yazıları ortala */
+  overflow: hidden; /* Taşmaları önler */
+  word-wrap: break-word; /* Uzun kelimeleri kır */
+}
+
+/* Kart içindeki resimler */
+.card2 img {
+  width: 100px; /* Küçük ekranlar için daha uygun */
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Kart içindeki yazılar */
+.card2 a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  white-space: normal; /* Satır kaydırmaya izin ver */
+  max-width: 100%; /* Kart dışına taşmasını engelle */
+}
+
+.card2 a:hover {
+  color: #800000; /* Hover sırasında bordo renk */
+}
+
+.card2:hover {
+  transform: scale(1.05); /* Hover sırasında kart büyüsün */
+  
+ 
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Hover sırasında gölge artışı */
+}
+
+/* Küçük ekranlar için düzenleme */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column; /* Küçük ekranda kartları alt alta yerleştir */
+    align-items: center; /* Ortala */
+  }
+
+  .card2 {
+    width: 90%; /* Küçük ekranda genişliği artır */
+  }
+}
+
