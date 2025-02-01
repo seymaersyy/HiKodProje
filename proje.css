@@ -4,6 +4,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .slider {
@@ -28,6 +29,25 @@ html {
   padding: 20px;
   color: #343a40; /* Metin rengini koyuluğu */
 }
+
+/*önemli not başlığı*/
+.important-note{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d6efd;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+/*ikon*/
+.important-note i {
+  font-size: 22px;
+  margin-right: 8px;
+}
+
 
 .slider img {
   position: absolute;
@@ -438,3 +458,138 @@ textarea {
   resize: none;
 }
 /*Bize ulaş bitiş*/
+
+
+/*etkinlikler kartları*/
+.future-event-card {
+  width: 100%; /* Kart genişliğini esnek yapar */
+  max-width: 357px; /* Maksimum genişlik */
+  height: 527px; /* Kart yüksekliğini sabitler */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* İçeriği eşit yayar */
+  align-items: center;
+  margin: auto; /* Ortalamak için */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.future-event-card img {
+  width: 100%; /* Kartın genişliğine tam oturur */
+  height: 150px; /* Sabit yükseklik */
+  object-fit: cover; /* Görselin kırpılmasını sağlar ve düzgün görünmesini korur */
+}
+
+.future-event-card .card-body {
+  flex-grow: 1; /* Kart içeriğinin esnek genişlemesini sağlar */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* İçeriğin eşit yayılmasını sağlar */
+  text-align: left; 
+  align-self: flex-start;
+}
+
+.future-event-card .card-title {
+  font-size: 1.2rem; /* Başlık yazı boyutunu sabitler */
+  font-weight: bold;
+}
+
+.future-event-card .card-text {
+  font-size: 1rem; /* Açıklama yazı boyutunu sabitler */
+}
+
+.future-event-card .btn {
+  font-size: 0.95rem; /* Buton yazı boyutunu küçült */
+  padding: 4px 6px; /* İç boşluğu azalt */
+  height: 28px; /* Sabit yükseklik */
+  width: 85px; /* Buton genişliğini daralt */
+  display: inline-block; /* Yan yana kalmalarını sağla */
+  text-align: center;
+  line-height: 1.2; /* Yazıyı ortala */
+  margin: 2px 2px;
+}
+
+
+
+
+
+.past-event-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.past-event-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Kart içeriğini esnek hale getir */
+.past-event-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Kartların arasında boşluk bırakmak için */
+.col-sm-6 {
+  margin-bottom: 20px; /* Alttaki kartlarla araya boşluk ekler */
+}
+
+/* Kartların arasında boşluk bırakmak için */
+.col-sm-6, .col-md-4, .col-lg-3 {
+  padding-bottom: 20px; /* Alttaki kartlarla araya boşluk ekler */
+  padding-right: 15px; /* Sağdan boşluk ekleyerek kartları sıkışık olmaktan kurtarır */
+}
+
+
+
+.etkinlik-baslik {
+  font-family: 'Poppins', sans-serif; /* Kalın ve okunaklı */
+  font-size: 30px; /* Büyük başlık */
+  font-weight: 900; /* Ekstra kalın */
+  color: rgb(121, 132, 229);/* Mor renk */
+  text-transform: uppercase; /* BÜYÜK HARF */
+  letter-spacing: 2px; /* Harfler arası mesafe */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+  padding-bottom: 8px;
+}
+
+.container-fluid {
+  margin-bottom: 80px; /* Footer ile arasına ekstra boşluk */
+}
+
+.row{
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+/*Gelecek ve geçmiş etkinlik başlıkları*/
+.event-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px; /* Alt boşluk bırak */
+}
+
+.event-header::before,
+.event-header::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background: #6b6bff;
+    margin: 0 15px;
+}
+
+.divider-line {
+  width: 50%;
+  height: 4px;
+  margin: 30px auto;
+  border-radius: 5px;
+}
