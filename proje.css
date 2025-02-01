@@ -23,9 +23,26 @@ html {
   margin-top: 50px; /* Kartların slider'dan uzaklaşması için boşluk */
 }
 
+/* Kısa bilgi kartını ve insan hakları nedir kartını eşitle */
+.row {
+  display: flex;
+  align-items: stretch; /* Kartları eşit yükseklikte tutar */
+}
+
+/* İnsan hakları nedir kartın içeriği (card-body) arka planını değiştirme */
+.card {
+  height: 100%; /* Kartların tam yüksekliğe uyum sağlamasını sağlar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Kartlara gölge efekti ekler */
+  border-radius: 8px;
+  background-color: #cfcba9be;
+}
+
 /* Bilgi kartın içeriği (card-body) arka planını değiştirme */
-.custom-card .card-body {
-  background-color: #cfcba9be; /* Daha açık gri bir arka plan */
+.custom-card .card-body{
+  height: 100%; /* Kısa Bilgi kartının yüksekliğini eşitlemek için */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Gölge efekti ekler */
+  border-radius: 8px;
+  background-color: #cfcba9be;
   padding: 20px;
   color: #343a40; /* Metin rengini koyuluğu */
 }
@@ -400,6 +417,39 @@ form input[type="email"] {
     width: 90%; /* Küçük ekranda genişliği artır */
   }
 }
+
+
+
+/* Ana sayfadaki kartlar için açılır kapanır pencere(modal) */
+
+/* Kartın üzerine tıklanarak açılacak pencere */
+.modal-content {
+  display: none; /* Başlangıçta gizli */
+  position: absolute;
+  top: +100px; /* Kartın üst kısmında olsun */
+  left: 50%;
+  transform: translateX(-50%); /* Ortalamak için */
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px; /* Maksimum genişlik */
+  height: 300px; /* Sabit yükseklik */
+  max-height: 500px; /* Maksimum yükseklik */
+  overflow-y: auto; /* Yalnızca dikey kaydırma çubuğu */
+  z-index: 5;
+}
+
+/* Modal içeriklerini gizlemek için */
+.card.show .modal-content {
+  display: block; /* Kart açıldığında modal içerik görünür */
+}
+
+
+/* Modal bitişi */
+
+
 
 /*Bize ulaş başlangıç*/
 .contact-container {

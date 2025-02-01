@@ -30,21 +30,8 @@
         line-height: 1.6; /* Okunabilirlik için satır yüksekliği */
     }
 
-    /* Başlıklar */
-    .vurgulu-baslik {
-        font-size: 36px; /* Büyük yazı boyutu */
-        font-weight: bold; /* Kalın yazı */
-        text-align: center; /* Ortalanmış */
-        margin-bottom: 20px; /* Başlık altı boşluk */
-        
-    }
-    h1 {
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
 
-    h2 {
+    .container h2 {
         font-size: 22px;
         color: #000000;
         margin-top: 20px;
@@ -57,25 +44,8 @@
         margin-top: 15px;
         margin-bottom: 10px;
     }
-
-    /* Paragraflar */
-    p {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-
-    /* Liste öğeleri */
-    ul {
-        margin: 10px 0 20px 20px; /* Sol boşluk ve alt boşluk */
-        padding: 0;
-        list-style-type: disc; /* Noktalı liste */
-    }
-
-    ul li {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
+   
+ 
     /* Vurgulu metin */
     strong {
         color: #330606;
@@ -99,164 +69,135 @@
             font-size: 24px;
             color: #333;
         }
-
-        .form-label {
-            font-size: 16px;
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        
-
         
     </style>
   </head>
 
   <body>
-    <!--Navbar-->
-   <!--Navbar-->
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="./img/logodunya.png" alt="Logo" width="250" height="230">
-  </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-5">
-          <a class="nav-link active" aria-current="page" href="./index.html">Anasayfa</a>
-          <a class="nav-link ms-3" href="./bizkimiz.html">Biz Kimiz</a>
-          <a class="nav-link ms-3" href="#">Etkinlikler</a>
-          <a class="nav-link ms-3" href="./bizeulas.html">Bize Ulaş</a>
-          
-          <!--Dropdown menü-->
-          <div class="nav-item dropdown ms-3">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Destek Olun
-            </a>
+     <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="index.html">
+         <img src="./img/logodunya.png" alt="Logo" width="250" height="230">
+   </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav ms-5">
+           <a class="nav-link " aria-current="page" href="./index.html">Anasayfa</a>
+           <a class="nav-link ms-3" href="./bizkimiz.html">Biz Kimiz</a>
+           <a class="nav-link ms-3" href="#">Etkinlikler</a>
+           <a class="nav-link ms-3" href="./bizeulas.html">Bize Ulaş</a>
+           
+           <!--Dropdown menü-->
+           <div class="nav-item dropdown ms-3">
+             <a
+               href="#"
+               class="nav-link dropdown-toggle"
+               id="navbarDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false"
+               >Destek Olun
+             </a>
+ 
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a href="bagis.html" class="dropdown-item">
+                 <i class="bi bi-currency-exchange"></i>
+                 Bağış</a
+               >
+ 
+               <a href="gonulluluk.html" class="dropdown-item">
+                 <i class="bi bi-person-hearts"></i>
+ 
+                 Gönüllülük
+               </a>
+ 
+               <a href="kurumsal.html" class="dropdown-item">
+                 <i class="bi bi-building-fill-check"></i>
+ 
+                 Kurumsal İş Birliği</a
+               >
+             </div>
+           </div>
+           <!--dropdown bitiş-->
+         </div>
+         <!-- Sağ tarafa hizalanan İhlal Bildir butonu -->
+         <div class="navbar-nav ms-auto me-5">
+           <a class="btn btn-danger text-white ihlal-bildir-btn" href="ihlalbildir.html">İhlal Bildir</a>
+           </div>
+       </div>
+     </div>
+   </nav>
+ <!--Navbar-->
+ 
 
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a href="bagis.html" class="dropdown-item">
-                <i class="bi bi-currency-exchange"></i>
-                Bağış</a
-              >
-
-              <a href="gonulluluk.html" class="dropdown-item">
-                <i class="bi bi-person-hearts"></i>
-
-                Gönüllülük
-              </a>
-
-              <a href="kurumsal.html" class="dropdown-item">
-                <i class="bi bi-building-fill-check"></i>
-
-                Kurumsal İş Birliği</a
-              >
-            </div>
-          </div>
-
-          <!--dropdown bitiş-->
-
-
-        </div>
-        <!-- Sağ tarafa hizalanan İhlal Bildir butonu -->
-        <div class="navbar-nav ms-auto me-5">
-      
-          <a class="btn btn-danger text-white ihlal-bildir-btn" href="ihlalbildir.html">İhlal Bildir</a>
-
-                
-               
-          </div>
-      </div>
-    </div>
-  </nav>
-<!--Navbar-->
-
-<!--Navbar-->
-
-<!--ENGELLİ AYRIMCILIĞI YASA BAŞLANGIÇ-->
-    <div class="container">
-        <div class="container">
-        <h1><strong>Türkiye Engelli Ayrımcılığı Yasası</strong></h1>
-        
-        <h2>1. Engelliler Hakkında Kanun (No. 5378)</h2>
-        <p>2005 yılında kabul edilen <strong>Engelliler Hakkında Kanun</strong> (No. 5378), engelli bireylerin yaşamını kolaylaştırmak, onların toplumsal hayatta eşit fırsatlara sahip olmalarını sağlamak amacıyla çıkarılmıştır. Bu kanun, engelli bireylerin ayrımcılığa uğramalarını yasaklar ve çeşitli haklar tanır.</p>
-
-        <h3>Kanun ile getirilen başlıca düzenlemeler:</h3>
-        <ul>
-            <li><strong>Ayrımcılığın Yasaklanması:</strong> Engelli bireylerin eğitim, istihdam, sağlık hizmetleri gibi temel haklardan mahrum bırakılmalarını ve ayrımcılığa uğramalarını yasaklar.</li>
-            <li><strong>Erişilebilirlik:</strong> Kamuya açık binalar ve ulaşım araçları gibi alanlarda engelli bireylerin erişebilirliğini sağlayacak düzenlemeler yapılması zorunludur.</li>
-            <li><strong>Eğitim ve İstihdam:</strong> Engelli bireylerin eğitim haklarının sağlanması ve istihdamda fırsat eşitliği sunulması için çeşitli teşvikler öngörülmüştür.</li>
-            <li><strong>Toplumsal Farkındalık:</strong> Toplumda engelli bireyler konusunda farkındalık yaratılması amacıyla kampanyalar ve etkinlikler düzenlenmesi teşvik edilmiştir.</li>
-        </ul>
-
-        <h2>2. Engelliler İçin Pozitif Ayrımcılık</h2>
-        <p>Türkiye'deki engelli bireylerin korunması ve desteklenmesi için <strong>pozitif ayrımcılık</strong> ilkesi benimsenmiştir. Bu, engelli bireylerin toplumsal hayatta daha eşit bir şekilde yer alabilmeleri için onlara bazı avantajlar sağlanması anlamına gelir. Örneğin, engelli bireylerin işe yerleştirilmesi, kamu hizmetlerine erişimi gibi konularda pozitif ayrımcılıkla desteklenmeleri sağlanmaktadır.</p>
-
-        <h2>3. Erişilebilirlik Düzenlemeleri</h2>
-        <p>Engelli bireylerin yaşamlarını kolaylaştırmak için çeşitli <strong>erişilebilirlik düzenlemeleri</strong> de yapılmıştır. Buna göre, engelli bireylerin kamuya açık alanlara, toplu taşıma araçlarına, sağlık ve eğitim hizmetlerine rahatça ulaşabilmesi için düzenlemeler getirilmiştir. Ayrıca, engelli bireylerin çevresel engelleri aşabilmesi için yapısal değişiklikler de yapılmaktadır.</p>
-
-        <h2>4. Çalışma Hayatında Eşitlik</h2>
-        <p>Engelli bireylerin çalışma hayatına katılımlarını teşvik etmek amacıyla özel düzenlemeler de yapılmıştır:</p>
-        <ul>
-            <li><strong>İş yerlerinde engelli bireylerin çalışma koşullarını iyileştiren önlemler</strong> getirilmiştir.</li>
-            <li><strong>Engelli bireylerin kamu ve özel sektörde işe alınabilmesi için işverenlere vergi avantajları</strong> sağlanır.</li>
-        </ul>
-
-        <h2>5. Cezai Yaptırımlar</h2>
-        <p>Engelli bireylere karşı ayrımcılık yapanlar, engelli bireylerin haklarını ihlal edenler cezai yaptırımlarla karşı karşıya kalabilirler. Bu yasalar, engelli bireylerin her alanda eşit haklar ve fırsatlar elde etmelerini sağlamak için bir denetim mekanizması oluşturur.</p>
-
-        <h2>6. İzleme ve Denetleme</h2>
-        <p>Engelli bireylerin haklarının ihlali durumunda, şikayetler <strong>Aile ve Sosyal Hizmetler Bakanlığı</strong>'na yapılabilir. Bakanlık, başvuruları değerlendirerek gerekli işlemleri yapar ve ihlali gerçekleştiren kişilere yönelik yasal süreç başlatabilir.</p>
-    </div>
-
-
-
-
-    <div class="container2">
-      <h1 class="text-center">Şikayetinizi Bize Bildirin</h1>
-      <div class="form-container">
-          <div class="mb-3">
-              <label for="ad" class="form-label">Ad</label>
-              <input type="text" class="form-control" id="ad" required>
-          </div>
-          <div class="mb-3">
-              <label for="soyad" class="form-label">Soyad</label>
-              <input type="text" class="form-control" id="soyad" required>
-          </div>
-          <div class="mb-3">
-              <label for="email" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="mb-3">
-              <label for="sikayet" class="form-label">Şikayet</label>
-              <textarea class="form-control" id="sikayet" rows="3" required></textarea>
-          </div>
-          <div class="d-flex justify-content-end">
-              <button class="btn btn-danger">Gönder</button>
-          </div>
-      </div>
-  </div>
-
-</div>
-
-
-<!--Footer-->
+ <!--ENGELLİ AYRIMCILIĞI YASA BAŞLANGIÇ-->
+     <div class="container">
+         <div class="container">
+         <h1><strong>Türkiye Engelli Ayrımcılığı Yasası</strong></h1>
+         
+         <h2 >1. Engelliler Hakkında Kanun (No. 5378)</h2>
+         <p>2005 yılında kabul edilen <strong>Engelliler Hakkında Kanun</strong> (No. 5378), engelli bireylerin yaşamını kolaylaştırmak, onların toplumsal hayatta eşit fırsatlara sahip olmalarını sağlamak amacıyla çıkarılmıştır. Bu kanun, engelli bireylerin ayrımcılığa uğramalarını yasaklar ve çeşitli haklar tanır.</p>
+ 
+         <h3>Kanun ile getirilen başlıca düzenlemeler:</h3>
+         <ul>
+             <li><strong>Ayrımcılığın Yasaklanması:</strong> Engelli bireylerin eğitim, istihdam, sağlık hizmetleri gibi temel haklardan mahrum bırakılmalarını ve ayrımcılığa uğramalarını yasaklar.</li>
+             <li><strong>Erişilebilirlik:</strong> Kamuya açık binalar ve ulaşım araçları gibi alanlarda engelli bireylerin erişebilirliğini sağlayacak düzenlemeler yapılması zorunludur.</li>
+             <li><strong>Eğitim ve İstihdam:</strong> Engelli bireylerin eğitim haklarının sağlanması ve istihdamda fırsat eşitliği sunulması için çeşitli teşvikler öngörülmüştür.</li>
+             <li><strong>Toplumsal Farkındalık:</strong> Toplumda engelli bireyler konusunda farkındalık yaratılması amacıyla kampanyalar ve etkinlikler düzenlenmesi teşvik edilmiştir.</li>
+         </ul>
+ 
+         <h2>2. Engelliler İçin Pozitif Ayrımcılık</h2>
+         <p>Türkiye'deki engelli bireylerin korunması ve desteklenmesi için <strong>pozitif ayrımcılık</strong> ilkesi benimsenmiştir. Bu, engelli bireylerin toplumsal hayatta daha eşit bir şekilde yer alabilmeleri için onlara bazı avantajlar sağlanması anlamına gelir. Örneğin, engelli bireylerin işe yerleştirilmesi, kamu hizmetlerine erişimi gibi konularda pozitif ayrımcılıkla desteklenmeleri sağlanmaktadır.</p>
+ 
+         <h2>3. Erişilebilirlik Düzenlemeleri</h2>
+         <p>Engelli bireylerin yaşamlarını kolaylaştırmak için çeşitli <strong>erişilebilirlik düzenlemeleri</strong> de yapılmıştır. Buna göre, engelli bireylerin kamuya açık alanlara, toplu taşıma araçlarına, sağlık ve eğitim hizmetlerine rahatça ulaşabilmesi için düzenlemeler getirilmiştir. Ayrıca, engelli bireylerin çevresel engelleri aşabilmesi için yapısal değişiklikler de yapılmaktadır.</p>
+ 
+         <h2>4. Çalışma Hayatında Eşitlik</h2>
+         <p>Engelli bireylerin çalışma hayatına katılımlarını teşvik etmek amacıyla özel düzenlemeler de yapılmıştır:</p>
+         <ul>
+             <li><strong>İş yerlerinde engelli bireylerin çalışma koşullarını iyileştiren önlemler</strong> getirilmiştir.</li>
+             <li><strong>Engelli bireylerin kamu ve özel sektörde işe alınabilmesi için işverenlere vergi avantajları</strong> sağlanır.</li>
+         </ul>
+ 
+         <h2>5. Cezai Yaptırımlar</h2>
+         <p>Engelli bireylere karşı ayrımcılık yapanlar, engelli bireylerin haklarını ihlal edenler cezai yaptırımlarla karşı karşıya kalabilirler. Bu yasalar, engelli bireylerin her alanda eşit haklar ve fırsatlar elde etmelerini sağlamak için bir denetim mekanizması oluşturur.</p>
+ 
+         <h2>6. İzleme ve Denetleme</h2>
+         <p>Engelli bireylerin haklarının ihlali durumunda, şikayetler <strong>Aile ve Sosyal Hizmetler Bakanlığı</strong>'na yapılabilir. Bakanlık, başvuruları değerlendirerek gerekli işlemleri yapar ve ihlali gerçekleştiren kişilere yönelik yasal süreç başlatabilir.</p>
+     </div>
+ 
+     <div class="container2">
+       <h1 class="text-center">Şikayetinizi Bize Bildirin</h1>
+       <div class="form-container">
+           <div class="mb-3">
+               <label for="ad" class="form-label">Ad</label>
+               <input type="text" class="form-control" id="ad" required>
+           </div>
+           <div class="mb-3">
+               <label for="soyad" class="form-label">Soyad</label>
+               <input type="text" class="form-control" id="soyad" required>
+           </div>
+           <div class="mb-3">
+               <label for="email" class="form-label">E-mail</label>
+               <input type="email" class="form-control" id="email" required>
+           </div>
+           <div class="mb-3">
+               <label for="sikayet" class="form-label">Şikayet</label>
+               <textarea class="form-control" id="sikayet" rows="3" required></textarea>
+           </div>
+           <div class="d-flex justify-content-end">
+               <button class="btn btn-danger">Gönder</button>
+           </div>
+       </div>
+   </div>
+ 
+ </div>
+ 
+ 
 <footer class="text-center py-3">
     <div class="footer-content">
       <div>
@@ -290,6 +231,8 @@
      
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
       
-    </body>
-  </html>
-  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+       
+     </body>
+   </html>
+   
