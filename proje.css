@@ -22,9 +22,26 @@ html {
   margin-top: 50px; /* Kartların slider'dan uzaklaşması için boşluk */
 }
 
+/* Kısa bilgi kartını ve insan hakları nedir kartını eşitle */
+.row {
+  display: flex;
+  align-items: stretch; /* Kartları eşit yükseklikte tutar */
+}
+
+/* İnsan hakları nedir kartın içeriği (card-body) arka planını değiştirme */
+.card {
+  height: 100%; /* Kartların tam yüksekliğe uyum sağlamasını sağlar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Kartlara gölge efekti ekler */
+  border-radius: 8px;
+  background-color: #cfcba9be;
+}
+
 /* Bilgi kartın içeriği (card-body) arka planını değiştirme */
-.custom-card .card-body {
-  background-color: #cfcba9be; /* Daha açık gri bir arka plan */
+.custom-card .card-body{
+  height: 100%; /* Kısa Bilgi kartının yüksekliğini eşitlemek için */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Gölge efekti ekler */
+  border-radius: 8px;
+  background-color: #cfcba9be;
   padding: 20px;
   color: #343a40; /* Metin rengini koyuluğu */
 }
