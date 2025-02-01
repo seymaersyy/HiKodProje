@@ -18,57 +18,140 @@
     <link rel="stylesheet" href="proje.css">
     <style>
        
- /* Genel container düzeni */
- .container {
-        max-width: 900px; /* Geniş alan */
-        margin: 40px auto; /* Ortalanmış düzen */
-        padding: 20px; /* İç boşluk */
-        background-color: #f9f9f9; /* Hafif arka plan rengi */
-        border-radius: 10px; /* Yumuşak köşeler */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
-        font-family: Arial, sans-serif; /* Temiz bir font */
-        line-height: 1.6; /* Okunabilirlik için satır yüksekliği */
-    }
+/* Genel Sayfa Tasarımı */
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
 
-    .container h2 {
-        font-size: 22px;
-        color: #000000;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
+/* Konteyner */
+.container, .container2 {
+    max-width: 950px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-    h3 {
-        font-size: 18px;
-        color: #444;
-        margin-top: 15px;
-        margin-bottom: 10px;
-    }
-   
- 
-    /* Vurgulu metin */
-    strong {
-        color: #330606;
-        font-weight: bold;
-    }
+/* Başlıklar */
+h1, h2, h3 {
+    color: #003366;
+    text-align: center;
+}
 
-        /*form css */
-        .container2 {
-        max-width: 800px; /* Üst bilgi kutusuyla aynı genişlik */
-        margin: 20px auto;
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #00796b;
+    border-bottom: 3px solid #00796b;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #00796b;
+}
+
+/* Liste Stili */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #f1f8e9;
+    margin-bottom: 10px;
+    border-left: 5px solid #388e3c;
+    font-size: 16px;
+}
+
+/* Şikayet Formu */
+.form-container {
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #388e3c;
+    box-shadow: 0 0 10px rgba(56, 142, 108, 0.5);
+    outline: none;
+}
+
+/* Buton Stili */
+.btn-danger {
+    background-color: #d32f2f;
+    color: #ffffff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-danger:hover {
+    background-color: #c2185b;
+}
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
+    .container, .container2 {
         padding: 20px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    .form-container {
-        padding: 10px;
+
+    h1 {
+        font-size: 24px;
     }
-        h1 {
-            text-align: center;
-            font-size: 24px;
-            color: #333;
-        }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-danger {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
     </style>
   </head>
 
