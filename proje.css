@@ -615,3 +615,34 @@ textarea {
   margin: 30px auto;
   border-radius: 5px;
 }
+
+/*whatsapp*/
+
+.whatsapp {
+  position: fixed;
+  right: 20px; /* Sayfanın sağından 20px boşluk bırakır */
+  bottom: 50px; /* Sayfanın altından 250px yukarıda yer alır */
+  background-color: #25d366; /* WhatsApp'ın yeşil rengi */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  animation: flash 4s infinite;
+  transition: transform 5s ease;
+}
+
+.whatsapp:hover {
+  animation: unset;
+}
+
+@keyframes flash {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+/*whatsapp*/

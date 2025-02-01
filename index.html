@@ -420,8 +420,11 @@
         </form>
       </div>
     </div>
+  </div>
 
-
+  <div class="whatsapp" id="whatsapp-button">
+    <i class="bi bi-whatsapp"></i>
+    Whatsapp Hattı
   </div>
 
   <!--Footer-->
@@ -456,6 +459,12 @@
   </footer>
 
   <!--Footer End-->
+
+  <script>
+    document.getElementById('whatsapp-button').addEventListener('click', function() {
+      window.open('https://www.whatsapp.com/?lang=tr_TR', '_blank');
+    });
+  </script>
 
   <script>
     document.querySelectorAll(".nav-item").forEach((item) => {
