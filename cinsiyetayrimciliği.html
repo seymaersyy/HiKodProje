@@ -170,7 +170,7 @@ ul li {
         <div class="navbar-nav ms-5">
           <a class="nav-link " aria-current="page" href="./index.html">Anasayfa</a>
           <a class="nav-link ms-3" href="./bizkimiz.html">Biz Kimiz</a>
-          <a class="nav-link ms-3" href="#">Etkinlikler</a>
+          <a class="nav-link ms-3" href="etkinlikler.html">Etkinlikler</a>
           <a class="nav-link ms-3" href="./bizeulas.html">Bize Ulaş</a>
           
           <!--Dropdown menü-->
@@ -306,7 +306,7 @@ ul li {
     <div class="footer-content">
       <div>
         <p>
-          <h2>Eşit Dünya Platformu</h2> İnsan haklarına adanmış bir
+          <h2 class="footer-title">Eşit Dünya Platformu</h2> İnsan haklarına adanmış bir
           platform olarak, bilinç oluşturmayı ve hak savunuculuğunu
           desteklemeyi hedefliyoruz. Daha adil bir dünya için bizimle olun!
         </p>
@@ -335,6 +335,18 @@ ul li {
      
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
       
+  <script>
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        const dropdown = item.querySelector('.dropdown-menu');
+        dropdown.classList.add('show');
+      });
+      item.addEventListener('mouseleave', () => {
+        const dropdown = item.querySelector('.dropdown-menu');
+        dropdown.classList.remove('show');
+      });
+    });
+  </script>
     </body>
   </html>
   

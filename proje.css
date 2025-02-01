@@ -640,7 +640,7 @@ textarea {
   max-width: 700px;
   height: 500px;       /* Sabit yükseklik */
   overflow-y: auto;    /* İçerik taşarsa dikey scroll ekle */
-  color: #000;         /* Yazı rengi */
+  color: #000;        /* Yazı rengi */
 }
 
 /* Kapama tuşu (X) */
