@@ -676,3 +676,10 @@ textarea {
     opacity: 0;
   }
 }
+.footer-title {
+  font-size: 2rem;
+  border: unset;
+  color: unset;
+  line-height: 1.2;
+  font-family: var(--bs-body-font-family);
+}
